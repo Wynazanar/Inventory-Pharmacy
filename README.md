@@ -23,24 +23,30 @@
 
 # Отправка уведомлений
 
-Для отправки уведомлений в Telegram необходимо:
-1. Создать бота через @BotFather (или любым другим способом).
-2. В файле `TgMessage.cs` (путь: `..\InventoryPharmacy\View\TgMessage.cs`) добавить токен бота и ID чата:
+Для отправки уведомлений в Telegram выполните следующие шаги:
+
+1. Создайть бота через [@BotFather](https://t.me/botfather) или любым другим удобным способом.
+2. Откройть файл `TgMessage.cs`, расположенный по пути: `..InventoryPharmacyViewTgMessage.cs`.
+3. Вставить токен вашего бота и ID чата, куда будут отправляться уведомления:
 ```C#
 var token = "Токен бота";
 var chatId = "ID чата, который будет приходить уведомления";
 ...
 ```
-Для отправки уведомлений на электоронную почту необходимо:
-1. 
-2. В файле `EmailMessage.cs` (путь: `..\InventoryPharmacy\View\EmailMessage.cs`) добавить вашу эл. почту, почту бота, его пароль и название:
+
+Для отправки уведомлений на электроную почту:
+1. Откройть файл `EmailMessage.cs` по адресу: `..InventoryPharmacyViewEmailMessage.cs`.
+2. Указать вашу электронную почту, почту бота, его пароль и название:
 ``` C#
 string myEmail = "Ваша_почта@nke.ru";
 string emailBotLog = "Почта_бота@nke.ru";
-string emailBotPas = "Пароль_бота@nke.ru";
-string emailBotName = "Название / Имя";
+string emailBotPas = "Пароль_бота";
+string emailBotName = "Название_или_Имя";
 ...
 ```
 [Подробнее про отправку сообщений Email](https://www.youtube.com/watch?v=pN66IETYU8k&t=130s)
 
 [Подробнее про пароль Email для бота](https://www.youtube.com/watch?v=BFTCVC33qhQ&t=374s)
+
+# Лицензия
+Лицензия MIT. Спасибо за использование программного обеспечения!
