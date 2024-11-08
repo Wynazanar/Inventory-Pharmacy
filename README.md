@@ -59,10 +59,6 @@ string emailBotName = "Название_или_Имя";
 ![](Screenshots/Screenshot_8.png)
 ![](Screenshots/Screenshot_9.png)
 ![](Screenshots/Screenshot_10.png)
-![](Screenshots/Screenshot_11.png)
-![](Screenshots/Screenshot_12.png)
-![](Screenshots/Screenshot_13.png)
-![](Screenshots/Screenshot_14.png)
 ![](Screenshots/Screenshot_15.png)
 
 # Лицензия
