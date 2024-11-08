@@ -50,6 +50,7 @@ string emailBotName = "Название_или_Имя";
 
 # Скриншоты
 ![](Screenshots/Screenshot_1.png)
+<img src="Screenshots/Screenshot_1.png" width="1280">
 
 # Лицензия
 Лицензия MIT. Спасибо за использование программного обеспечения!
