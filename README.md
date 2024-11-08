@@ -28,8 +28,8 @@ To set up Telegram notifications, follow these steps:
 2. Open the file `TgMessage.cs`, located at: `..InventoryPharmacyView\TgMessage.cs`.
 3. Insert your bot's token and the chat ID where you want to receive notifications:
 ```C#
-var token = "Токен бота";
-var chatId = "ID чата, куда будут приходить уведомления";
+var token = "Your Bot Token";
+var chatId = "Chat ID for receiving notifications";
 ...
 ```
 
@@ -37,10 +37,10 @@ For sending notifications via email:
 1. Open the file `EmailMessage.cs` at: `..InventoryPharmacyView\EmailMessage.cs`.
 2. Specify your email address, the bot's email, password, and display name:
 ``` C#
-string myEmail = "Ваша_почта@nke.ru";
-string emailBotLog = "Почта_бота@nke.ru";
-string emailBotPas = "Пароль_бота";
-string emailBotName = "Название_или_Имя";
+string myEmail = "your_email@nke.ru";
+string emailBotLog = "bot_email@nke.ru";
+string emailBotPas = "Bot Password";
+string emailBotName = "Display Name";
 ...
 ```
 [More details on sending email messages](https://www.youtube.com/watch?v=pN66IETYU8k&t=130s)
