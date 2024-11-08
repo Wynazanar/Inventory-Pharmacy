@@ -1,42 +1,41 @@
-# Информационная система складского учета медицинской аптеки
+# Inventory Management System for a Medical Pharmacy
 
-Данный проект представляет собой программное приложение на WPF, предназначенное для управления складом медицинской аптеки. Программа работает на платформе [платформа] и использует SQLite в качестве базы данных для хранения информации. Это приложение является курсовой работой по дисциплине "Разработка программных модулей".
+This project is a WPF-based software application designed to manage the inventory of a medical pharmacy. The program runs on the platform platform and uses SQLite as its database to store information. This application serves as a coursework for the subject "Software Module Development."
 
-### Набор функций:
-- Несколько ролей для пользователей.
-- Управление текущими запасами, включая текущий запас / количество.
-- Разделение товара на разные категории.
-- Сканирование товаров с помощью сканера штрих-кодов, чтобы быстро отмечать приход товара.
-- Дополнительных экран для продажи товаров с помощью сканера штрих-кодов.
-- Создание Word-файлов с текущими ценами для печати.
-- Отправка уведомлений о создании, редактировании, удалении, а также всего списка товаров / персонала в чат приложения Telegram.
-- Отправка товарного чека на электронную почту.
+### Feature Set:
+- Multiple user roles.
+- Management of current stock levels, including real-time quantity tracking.
+- Categorization of products into different categories.
+- Product scanning using barcode scanners to quickly record incoming items.
+- Additional screens for selling products with barcode scanner integration.
+- Generation of Word files containing current prices for printing purposes.
+- Sending notifications about creation, editing, deletion, and full lists of products/personnel to the Telegram app chat.
+- Emailing product receipts to customers.
 
+# Initial Login
 
-# Первый вход в систему
+Upon installation, the database will be empty. For the initial login, use the following credentials:
+- *Username*: `adminSaveLogin`
+- *Password*: `adminSavePassword`
 
-После установки приложения базы данных будут пустыми. Для первоначального входа используйте следующие учетные данные:
-- *Логин*: `adminSaveLogin`
-- *Пароль*: `adminSavePassword`
+Note that these credentials are static and cannot be changed. This measure ensures constant access to the system.
 
-Обратите внимание, что данный логин и пароль являются статичными и не подлежат изменению. Это сделано для обеспечения постоянного доступа к системе.
+# Notification Delivery
 
-# Отправка уведомлений
+To set up Telegram notifications, follow these steps:
 
-Для отправки уведомлений в Telegram выполните следующие шаги:
-
-1. Создайть бота через [@BotFather](https://t.me/botfather) или любым другим удобным способом.
-2. Откройть файл `TgMessage.cs`, расположенный по пути: `..InventoryPharmacyViewTgMessage.cs`.
-3. Вставить токен вашего бота и ID чата, куда будут отправляться уведомления:
+1. Create a bot through @BotFather or any other convenient method.
+2. Open the file `TgMessage.cs`, located at: `..InventoryPharmacyView\TgMessage.cs`.
+3. Insert your bot's token and the chat ID where you want to receive notifications:
 ```C#
 var token = "Токен бота";
 var chatId = "ID чата, куда будут приходить уведомления";
 ...
 ```
 
-Для отправки уведомлений на электроную почту:
-1. Откройть файл `EmailMessage.cs` по адресу: `..InventoryPharmacyViewEmailMessage.cs`.
-2. Указать вашу электронную почту, почту бота, его пароль и название:
+For sending notifications via email:
+1. Open the file `EmailMessage.cs` at: `..InventoryPharmacyView\EmailMessage.cs`.
+2. Specify your email address, the bot's email, password, and display name:
 ``` C#
 string myEmail = "Ваша_почта@nke.ru";
 string emailBotLog = "Почта_бота@nke.ru";
@@ -44,11 +43,11 @@ string emailBotPas = "Пароль_бота";
 string emailBotName = "Название_или_Имя";
 ...
 ```
-[Подробнее про отправку сообщений Email](https://www.youtube.com/watch?v=pN66IETYU8k&t=130s)
+[More details on sending email messages](https://www.youtube.com/watch?v=pN66IETYU8k&t=130s)
 
-[Подробнее про пароль Email для бота](https://www.youtube.com/watch?v=BFTCVC33qhQ&t=374s)
+[More about setting an email password for the bot](https://www.youtube.com/watch?v=BFTCVC33qhQ&t=374s)
 
-# Скриншоты
+# Screenshots
 ![](Screenshots/Screenshot_1.png)
 ![](Screenshots/Screenshot_2.png)
 ![](Screenshots/Screenshot_3.png)
@@ -60,13 +59,13 @@ string emailBotName = "Название_или_Имя";
 ![](Screenshots/Screenshot_9.png)
 ![](Screenshots/Screenshot_10.png)
 
-# Возможные улучшения:
-- Создание настроек, для выбора цветовой темы, языка и прочих параметров.
-- Улучшение функционала для сохранения ценников (изменение размера бумаги, количество столбцов и других настроек). 
-- Создание функционала для отчетности.
-- Разработка онлайн-заказа.
-- Улучшение кода и применение паттерна MVVM.
-- Улучшение ролей. Выбор для каждого пользователя определнных функций, которые он может выполнять.
+# Possible Improvements:
+- Adding settings to choose color themes, languages, and other parameters.
+- Enhancing price tag functionality (adjust paper size, number of columns, etc.).
+- Creating reporting features.
+- Developing online ordering capabilities.
+- Improving code quality and implementing the MVVM pattern.
+- Refining user roles by selecting specific functions each user can perform.
 
-# Лицензия
-Лицензия MIT. Спасибо за использование программного обеспечения!
+# License
+MIT License. Thank you for using this software!
