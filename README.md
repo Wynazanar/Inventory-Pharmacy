@@ -49,6 +49,7 @@ string emailBotName = "Название_или_Имя";
 [Подробнее про пароль Email для бота](https://www.youtube.com/watch?v=BFTCVC33qhQ&t=374s)
 
 # Скриншоты
+![](Screenshots/Screenshot_1.png)
 
 # Лицензия
 Лицензия MIT. Спасибо за использование программного обеспечения!
