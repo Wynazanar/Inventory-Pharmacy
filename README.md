@@ -50,7 +50,20 @@ string emailBotName = "Название_или_Имя";
 
 # Скриншоты
 ![](Screenshots/Screenshot_1.png)
-<img src="Screenshots/Screenshot_1.png">
+![](Screenshots/Screenshot_2.png)
+![](Screenshots/Screenshot_3.png)
+![](Screenshots/Screenshot_4.png)
+![](Screenshots/Screenshot_5.png)
+![](Screenshots/Screenshot_6.png)
+![](Screenshots/Screenshot_7.png)
+![](Screenshots/Screenshot_8.png)
+![](Screenshots/Screenshot_9.png)
+![](Screenshots/Screenshot_10.png)
+![](Screenshots/Screenshot_11.png)
+![](Screenshots/Screenshot_12.png)
+![](Screenshots/Screenshot_13.png)
+![](Screenshots/Screenshot_14.png)
+![](Screenshots/Screenshot_15.png)
 
 # Лицензия
 Лицензия MIT. Спасибо за использование программного обеспечения!
